@@ -1,8 +1,6 @@
 # WebDriverIO-Assignment
 WebDriverIO Assignment for QualityWorks Automation Bootcamp done by Mark-Anthony Jones
 
----
-
 # How to run tests
 
 ## Run all tests in repository
@@ -15,6 +13,4 @@ WebDriverIO Assignment for QualityWorks Automation Bootcamp done by Mark-Anthony
 
 > Check config file for suites under the ==suites== config option
 
----
-
-Happy Automation! :party: :party:
+Happy Automation! :confetti_ball: :confetti_ball:
