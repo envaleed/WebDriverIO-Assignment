@@ -11,6 +11,6 @@ WebDriverIO Assignment for QualityWorks Automation Bootcamp done by Mark-Anthony
 
 `npm run test -- --suite <NAME OF SUITE HERE>`
 
-> Check config file for suites under the ==suites== config option
+> Check config file for suites under the **suites** config option
 
 Happy Automation! :confetti_ball: :confetti_ball:
