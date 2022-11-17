@@ -20,10 +20,11 @@ exports.config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./test/specs/**/*.js"],
+  specs: ['./test/specs/**/*.js'],
 
   suites: {
-    signup: ["./test/specs/signup.e2e.js"],
+    signup: ['./test/specs/signup.e2e.js'],
+    addtocart: ['./test/specs/addtocart.e2e.js'],
   },
   // Patterns to exclude.
   exclude: [
@@ -58,7 +59,7 @@ exports.config = {
       // 5 instances get started at a time.
       maxInstances: 5,
       //
-      browserName: "chrome",
+      browserName: 'chrome',
       acceptInsecureCerts: true,
       // If outputDir is provided WebdriverIO can capture driver session logs
       // it is possible to configure which logTypes to include/exclude.
@@ -73,7 +74,7 @@ exports.config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: "info",
+  logLevel: 'info',
   //
   // Set specific log levels per logger
   // loggers:
@@ -97,7 +98,7 @@ exports.config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: "http://localhost",
+  baseUrl: 'http://localhost',
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
@@ -113,7 +114,7 @@ exports.config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ["selenium-standalone"],
+  services: ['selenium-standalone'],
 
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
@@ -121,7 +122,7 @@ exports.config = {
   //
   // Make sure you have the wdio adapter package for the specific framework installed
   // before running any tests.
-  framework: "mocha",
+  framework: 'mocha',
   //
   // The number of times to retry the entire specfile when it fails as a whole
   // specFileRetries: 1,
@@ -135,13 +136,13 @@ exports.config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
-  reporters: ["spec"],
+  reporters: ['spec'],
 
   //
   // Options to be passed to Mocha.
   // See the full list at http://mochajs.org/
   mochaOpts: {
-    ui: "bdd",
+    ui: 'bdd',
     timeout: 60000,
   },
   //
