@@ -69,12 +69,11 @@ describe('Signing up on the E-commerce app', () => {
   });
 
   it('Verify that a user can register with valid credentials', async () => {
-    const regex = new RegExp('[a-zA-Z0-9]');
     const fullName = faker.name.fullName();
     const firstName = fullName.split(' ')[0];
     const lastName = fullName.split(' ')[1];
     const email = faker.internet.email(firstName, lastName, 'example.com');
-    const password = faker.internet.password(12, false, regex);
+    const password = faker.internet.password(12, false, /\w/, '!Aa0');
     await SignUpPage.register(firstName, lastName, email, password);
     await expect(browser).toHaveUrl(
       'https://magento.softwaretestingboard.com/customer/account/'

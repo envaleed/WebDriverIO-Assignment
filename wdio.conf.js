@@ -25,6 +25,7 @@ exports.config = {
   suites: {
     signup: ['./test/specs/signup.e2e.js'],
     addtocart: ['./test/specs/addtocart.e2e.js'],
+    checkout: ['./test/specs/checkout.e2e.js'],
   },
   // Patterns to exclude.
   exclude: [
