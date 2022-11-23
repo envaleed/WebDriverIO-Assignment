@@ -11,6 +11,16 @@ WebDriverIO Assignment for QualityWorks Automation Bootcamp done by Mark-Anthony
 
 `npm run test -- --suite <NAME OF SUITE HERE>`
 
+### Suite Names
+
+`checkout - Purchase item in Cart and View Order History`
+`addtocart - Add item to cart`
+`signup - Register user`
+
+## Cross-Browser testing
+
+SafariDriver has been set up. Firefox and Safari both work for the most part
+
 > Check config file for suites under the **suites** config option
 
 Happy Automation! :confetti_ball: :confetti_ball:
